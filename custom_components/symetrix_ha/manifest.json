@@ -2,7 +2,7 @@
   "domain": "symetrix_ha",
   "name": "Symetrix DSP TCP",
   "version": "2.0.0",
-  "documentation": "https://www.symetrix.co",
+  "documentation": "https://github.com/rztw/ha_symetrix_tcp_remote",
   "requirements": [],
   "dependencies": [],
   "codeowners": [],

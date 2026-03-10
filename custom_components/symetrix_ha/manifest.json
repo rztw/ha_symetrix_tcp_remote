@@ -10,7 +10,6 @@
   "loggers": ["custom_components.symetrix_ha"],
   "config_flow": true,
   "integration_type": "hub",
-  "after_dependencies": [],
-  "platforms": ["button", "number", "binary_sensor", "sensor", "switch"]
+  "after_dependencies": []
 }
 

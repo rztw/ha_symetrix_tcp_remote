@@ -1,0 +1,120 @@
+send_raw:
+  name: Send raw TCP command
+  description: Send a raw TCP command string to the Symetrix DSP (\\r\\n will be自動補上).
+  fields:
+    command:
+      name: Command
+      description: Raw command to send (without line ending).
+      example: "GPR"
+
+load_preset:
+  name: Load preset
+  description: Load a preset (LP).
+  fields:
+    preset:
+      name: Preset number
+      description: Preset number to load.
+      example: 1
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 1000
+          mode: box
+
+load_global_preset:
+  name: Load global preset
+  description: Load a global preset (LPG).
+  fields:
+    preset:
+      name: Preset number
+      description: Global preset number to load.
+      example: 1
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 1000
+          mode: box
+
+flash:
+  name: Flash DSP
+  description: Flash the front panel indicators (FU).
+  fields:
+    amount:
+      name: Amount
+      description: Number of flashes.
+      example: 4
+      required: false
+      default: 4
+      selector:
+        number:
+          min: 1
+          max: 20
+          mode: slider
+
+reboot:
+  name: Reboot DSP
+  description: Reboot the DSP (R!).
+
+set_value:
+  name: Set control value
+  description: Set a control number to a specific value (CS).
+  fields:
+    control:
+      name: Control number
+      description: Control number.
+      example: 1
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 1000
+          mode: box
+    value:
+      name: Value
+      description: Control value (0–65535).
+      example: 32768
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 65535
+          mode: slider
+
+change_value:
+  name: Change control value
+  description: Increase or decrease a control number by a step (CC).
+  fields:
+    control:
+      name: Control number
+      description: Control number.
+      example: 1
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 1000
+          mode: box
+    step:
+      name: Step size
+      description: Step size (0–65535).
+      example: 1024
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 65535
+          mode: slider
+    increase:
+      name: Increase
+      description: If true increase, otherwise decrease.
+      required: false
+      default: true
+      selector:
+        boolean: {}
+
+get_latest_preset:
+  name: Get latest preset
+  description: Request the latest recalled preset (GPR). Response需另外透過其他管道解析（本整合目前只負責送指令）。
+

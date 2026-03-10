@@ -1,0 +1,16 @@
+# EXAMPLE: 輸出推桿：Control 101，對應 -72 ~ +12 dB
+- control: 101
+  type: number
+  name: Sample Fader
+  scale: db_72_12   # 以 dB 顯示，內部自動換算 0~65535
+  min: -72
+  max: 12
+  step: 0.5
+
+# EXAMPLE: 輸出靜音：Control 5，65535=On, 0=Off
+- control: 5
+  type: switch
+  name: Sample Mute
+  on_value: 65535
+  off_value: 0
+

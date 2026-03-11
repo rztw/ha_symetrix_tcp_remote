@@ -72,8 +72,6 @@ This integration focuses on TCP control and state sync between Home Assistant an
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=rztw&repository=ha_symetrix_tcp_remote&category=integration)
 [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=symetrix_ha)
 
-Replace `rztw` / `ha_symetrix_tcp_remote` in the HACS link with your actual GitHub repository.
-
 1. In HACS, go to **Integrations** -> menu -> **Custom repositories**.
 2. Add this GitHub repository URL, set category to **Integration**.
 3. Search and install **Symetrix DSP TCP**.
@@ -239,8 +237,6 @@ This project is not affiliated with, endorsed by, or sponsored by Symetrix.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=rztw&repository=ha_symetrix_tcp_remote&category=integration)
 [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=symetrix_ha)
-
-請把 HACS 連結裡的 `rztw` / `ha_symetrix_tcp_remote` 改成你的實際 GitHub 倉庫。
 
 1. 在 HACS 進入 **Integrations** -> 右上選單 -> **Custom repositories**。
 2. 貼上本 GitHub repository URL，類型選 **Integration**。
